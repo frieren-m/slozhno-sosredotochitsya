@@ -1,0 +1,29 @@
+{
+  "name": "slozhno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "Проект \"Сложно сосредоточиться\" Адаптивный сайт в светлой и тёмной темах",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Test!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazannik/slozhno-sosredotochitsya.git"
+  },
+  "author": "Mikhail Kazannik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kazannik/slozhno-sosredotochitsya/issues"
+  },
+  "homepage": "https://github.com/Kazannik/slozhno-sosredotochitsya#readme",
+  "dependencies": {
+    "prettier": "^3.0.3",
+    "stylelint": "^15.10.3"
+  }
+}

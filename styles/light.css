@@ -1,12 +1,43 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --header-title-color: #ffc2e6;
+  --header-title-shadow-color: #ff0070;
+  --header-title-shadow-light-color: #ff8dcb;
+  --title-text-color: #353430;
+  --subtitle-text-color: #353430;
+  --subtitle-text-back-color: #ff8dcb;
+  --text-color: #353430;
+  --link-shadow-color: #ff8dcb;
+  --backcolor: #fff1f7;
+
+  --button-text-color: #353430;
+  --button-border-hover-color: rgba(50 49 45/ 0.40);
+
+  --cover-image: url(../images/cover-image-light.png);
+}
+
+.page.theme_light .decorated__tape {
+  opacity: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-title-color: #ffc2e6;
+    --header-title-shadow-color: #ff0070;
+    --header-title-shadow-light-color: #ff8dcb;
+    --title-text-color: #353430;
+    --subtitle-text-color: #353430;
+    --subtitle-text-back-color: #ff8dcb;
+    --text-color: #353430;
+    --link-shadow-color: #ff8dcb;
+    --backcolor: #fff1f7;
+
+    --button-text-color: #353430;
+    --button-border-hover-color: rgba(50 49 45/ 0.40);
+    
+    --cover-image: url(../images/cover-image-light.png);
+  }
+
+  .decorated__tape {
+    opacity: 0;
+  }
 }
