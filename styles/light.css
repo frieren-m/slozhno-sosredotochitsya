@@ -1,43 +1,27 @@
+@charset "UTF-8";
+
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_light {
-  --header-title-color: #ffc2e6;
-  --header-title-shadow-color: #ff0070;
-  --header-title-shadow-light-color: #ff8dcb;
-  --title-text-color: #353430;
-  --subtitle-text-color: #353430;
-  --subtitle-text-back-color: #ff8dcb;
-  --text-color: #353430;
-  --link-shadow-color: #ff8dcb;
-  --backcolor: #fff1f7;
-
-  --button-text-color: #353430;
-  --button-border-hover-color: rgba(50 49 45/ 0.40);
-
-  --cover-image: url(../images/cover-image-light.png);
+  --main-text-color: #353430;
+  --title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --title-decor: #ff8dcb;
+  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+  --background-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --article-title-color: var(--main-text-color);
+  --section-title-color: var(--main-text-color);
+  --border-color: var(--title-shadow);
+  --corners-color: var(--main-text-color);
+  --link-shadow: var(--title-color);
+  --rec-color: var(--background-color);
 }
 
-.page.theme_light .decorated__tape {
-  opacity: 0;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --header-title-color: #ffc2e6;
-    --header-title-shadow-color: #ff0070;
-    --header-title-shadow-light-color: #ff8dcb;
-    --title-text-color: #353430;
-    --subtitle-text-color: #353430;
-    --subtitle-text-back-color: #ff8dcb;
-    --text-color: #353430;
-    --link-shadow-color: #ff8dcb;
-    --backcolor: #fff1f7;
-
-    --button-text-color: #353430;
-    --button-border-hover-color: rgba(50 49 45/ 0.40);
-    
-    --cover-image: url(../images/cover-image-light.png);
-  }
-
-  .decorated__tape {
-    opacity: 0;
-  }
+.page.theme_light .header__rec {
+  display: none;
 }
