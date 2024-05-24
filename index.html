@@ -18,46 +18,40 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <h1 class="header__title">no focus</h1>
-      <p class="header__text">
-        Что делать, когда не можешь делать ничего<br />Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </p>
-
-      <div class="decorated__top-marker tape-marker"></div>
-      <div class="decorated__tape">
-        <p class="decorated__tape-label" aria-hidden="true">REC</p>
-        <div class="decorated__tape-lamp"></div>
-      </div>
-
+      <!-- Лампочка -->
+      <span class="header__lightbulb" aria-hidden="true"></span>
+      <!-- Переключатель тем -->
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              день
+              class="header__theme-menu-button header__theme-menu-button_type_light">
+              День
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_auto header__theme-menu-button_active"
-              disabled
-            >
-              авто
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              disabled>
+              Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              неон
+              class="header__theme-menu-button header__theme-menu-button_type_dark">
+              Неон
             </button>
           </li>
         </ul>
       </nav>
-
-      <div class="decorated__bottom-marker tape-marker"></div>
+      <!-- Заголовок -->
+      <h1 class="header__title title-style">no focus</h1>
+      <!-- Текст -->
+      <p class="header__text title-decor">
+        Что делать, когда не можешь делать ничего
+        <br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
 
     <main>
